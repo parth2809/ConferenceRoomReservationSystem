@@ -4,29 +4,80 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.css">
         <style type="text/css">
-        table{
-        border-collapse: collapse;
-        width: 50%;
-        color: #d96459;
-        font-size: 25px;
-        text-align: left;
-        opacity: 0.9;
-        margin-left: 25%;
-        }
-        th{
+        @media screen and (max-width: 749px) {
+            table{
+            border-collapse: collapse;
+            width: 100%;
+            color: #d96459;
+            font-size: 12px;
+            text-align: left;
+            opacity: 0.9;
+            margin: auto;
+            }
+            th{
             background-color: #d96459;
             color:white;
-        }
-        tr{
+            }
+            tr{
             background-color: grey;
             color: white;
+            }
+            .vertical-center{
+                margin-top: 20%
+            }
         }
+        
+        @media screen and (min-width: 750px) and (max-width: 1049px) {
+            table{
+            border-collapse: collapse;
+            width: 100%;
+            color: #d96459;
+            font-size: 25px;
+            text-align: left;
+            opacity: 0.9;
+            margin: auto;
+            }
+            th{
+            background-color: #d96459;
+            color:white;
+            }
+            tr{
+            background-color: grey;
+            color: white;
+            }
+            .vertical-center{
+                margin-top: 15%
+            }
+        }
+        @media screen and (min-width: 1050px) {
+            table{
+            border-collapse: collapse;
+            width: 62%;
+            color: #d96459;
+            font-size: 25px;
+            text-align: left;
+            opacity: 0.9;
+            margin-left: 19%;
+            }
+            th{
+            background-color: #d96459;
+            color:white;
+            }
+            tr{
+            background-color: grey;
+            color: white;
+            }
+            .vertical-center{
+                margin-top: 10%
+            }
+        }
+        
         </style>
 </head>
 <body>
     <div class="container-fluid" style=" background-image: url(conference.jpg); background-position: center; background-size: cover; height:100vh;  background-repeat: no-repeat; position: absolute;"> 
-    <a type="button" class="btn btn-primary btn-lg" style="float: left; margin: 2%;" href = "homepage.php">Back</a>        
-    <div class="vertical-center" style="margin-top:10%;">
+    <a type="button" class="btn btn-primary btn-lg" style="float: left; margin-top: 2%;" href = "homepage.php">Back</a>        
+    <div class="vertical-center">
                 <form action="" method="post">
                     <span class="form-label offset-xl-2  offset-lg-2" style="color: white; font-size: 18px"> Room  </span>
                     <select name='Room' class="col-xl-3 col-lg-3" name="Room" required style="-webkit-appearance: menulist-button; -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); height: 4vh;-webkit-user-select: none; ; display: inline-block; text-align: center">
@@ -39,7 +90,7 @@
                     <span class="form-label offset-xl-1 offset-lg-1" style="color:  white;  font-size: 18px"> Date  </span>
                     <input name='Date' class="col-xl-3 col-lg-3" required="required" type="date" name="Date" placeholder="Enter a date" style="-webkit-appearance: menulist-text; -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); height: 4vh;-webkit-user-select: none; display: inline-block;">
                     <div class="form-btn">
-                        <button class="submit-btn btn-primary" style=" height:50px; width: 35%; margin-top: 2%; border-radius: 3px; display: block; border: none; margin-left: 32%">View Schedule</button>
+                        <button class="submit-btn btn-primary" style=" height:50px; width: 35%; border-radius: 3px; display: block; border: none; margin: auto; margin-top: 5%">View Schedule</button>
                     </div>
                 </form>
             </div>
